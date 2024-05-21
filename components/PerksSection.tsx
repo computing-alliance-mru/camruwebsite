@@ -31,8 +31,7 @@ export default function PerksSection({ perks }: { perks: perksContent }) {
             {perks.perk1title}
           </h3>
           <p className="text-lg font-plex leading-8">
-            A community of like-minded individuals who are passionate about
-            technology and innovation.
+            {perks.perk1content}
           </p>
         </div>
         <div className="flex flex-col flex-1 border-camru-blue border-l-4 px-5">
@@ -47,8 +46,7 @@ export default function PerksSection({ perks }: { perks: perksContent }) {
             {perks.perk2title}
           </h3>
           <p className="text-lg font-plex leading-8">
-            Opportunities to connect with industry professionals and other
-            students.
+            {perks.perk2content}
           </p>
         </div>
         <div className="flex flex-col flex-1 border-camru-blue border-l-4 px-5">
@@ -63,7 +61,7 @@ export default function PerksSection({ perks }: { perks: perksContent }) {
             {perks.perk3title}
           </h3>
           <p className="text-lg font-plex leading-8">
-            Hands-on workshops to help you develop your technical skills.
+            {perks.perk3content}
           </p>
         </div>
       </div>
