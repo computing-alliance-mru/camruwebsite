@@ -16,13 +16,17 @@ export default function NavMenu() {
         <ul className="h-fit flex justify-end gap-5 px-5">
           <li className="h-8 leading-4 py-2 px-5 font-semibold cursor-pointer">
             Home
+          </li>          
+          <li className="h-8 leading-4 py-2 px-5 font-semibold cursor-pointer">
+            <a href="#sponsors">Sponsors</a>
           </li>
           <Link href="https://discord.gg/SDdB7DwZYz">
             <li className="h-8 leading-4 py-2 px-5 rounded-md bg-[#7289da] hover:bg-[#677bc4] text-white font-semibold cursor-pointer flex flex-row align-middle transition-all">
               <FaDiscord className="inline-block mr-2" size={18} />
               Join Us!
             </li>
-          </Link>
+          </Link>            
+
         </ul>
       </div>
     </nav>

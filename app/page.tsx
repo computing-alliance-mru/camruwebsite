@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import NavMenu from "@/components/NavMenu";
 import PerksSection from "@/components/PerksSection";
 import TeamSection from "@/components/TeamSection";
+import SponsorSection from "@/components/SponsorSection";
 
 import { createReader } from "@keystatic/core/reader";
 import keystaticConfig from "@/keystatic.config";
@@ -17,6 +18,7 @@ export default async function Home() {
   const perksContent = await reader.singletons.perks.read();
 
   const teamContent = await reader.collections.executives.all();
+  const sponsorContent = await reader.collections.sponsors.all();
 
   return (
     <main className="font-plex">
@@ -34,6 +36,7 @@ export default async function Home() {
       </ContentSection>
       {perksContent && <PerksSection perks={perksContent} />}
       {teamContent && <TeamSection team={teamContent} />}
+      {sponsorContent && <SponsorSection sponsor={sponsorContent} />}
       <CTA />
       <Footer />
     </main>

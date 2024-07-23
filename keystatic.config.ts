@@ -99,6 +99,29 @@ export default config({
     }),
   },
   collections: {
+    sponsors: {
+      label: "Sponsors",
+      path: "content/sponsors/*",
+      slugField: "name",
+      schema: {
+        name: fields.text({
+          label: "Sponsor Name",
+          description: "The name of the sponsor",
+        }),
+        image: fields.image({
+          label: "Image",
+          description:
+            "The logo of the sponsor.",
+          directory: "public/images/sponsors",
+          publicPath: "/images/sponsors/",
+        }),
+        priority: fields.integer({
+          label: "Priority",
+          description:
+            "Where should this sponsor be displayed? Lower numbers are displayed first.",
+        }),
+      },
+    },
     executives: {
       label: "Executives",
       path: "content/executives/*",
