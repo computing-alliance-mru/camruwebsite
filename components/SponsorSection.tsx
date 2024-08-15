@@ -20,7 +20,7 @@ type sponsorContent = {
   };
 }[];
 
-export default function TeamSection({ sponsor }: { sponsor: sponsorContent }) {
+export default function SponsorSection({ sponsor }: { sponsor: sponsorContent }) {
   sponsor.sort((a, b) => (a.entry.priority || 0) - (b.entry.priority || 0));
 
   sponsor.forEach((member) => {
