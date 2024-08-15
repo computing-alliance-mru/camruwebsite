@@ -69,7 +69,7 @@ export default function SponsorSection({ sponsor }: { sponsor: sponsorContent })
         <CarouselNext className="translate-x-1/2 right-0" />
       </Carousel>
       <div className="flex flex-col items-center justify-center">
-        <p className="text-lg font-plex leading-8">CAMRU's success is made possible by the incredible support of our sponsors.</p>
+        <p className="text-lg font-plex leading-8">CAMRU&apos;s success is made possible by the incredible support of our sponsors.</p>
         <a href="EXAMPLE_PDF_FILE" target="_blank" rel="noopener noreferrer" className="leading-4 py-4 px-10 rounded-md bg-[#7289da] hover:bg-[#677bc4] text-white font-semibold cursor-pointer flex flex-row align-middle justify-center transition-all mt-8">
         Become a Sponsor!
         </a>
