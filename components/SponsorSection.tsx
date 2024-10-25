@@ -35,7 +35,7 @@ export default function SponsorSection({ sponsor }: { sponsor: sponsorContent })
       </h2>      
 
       </div> 
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center mb-4">
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center mb-4">
         {sponsor.map((member) => (
           <SponsorCard
             key={member.slug}
