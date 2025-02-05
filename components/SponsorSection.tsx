@@ -36,7 +36,18 @@ export default function SponsorSection({ sponsor }: { sponsor: sponsorContent })
 
       </div> 
       <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center mb-4">
-        {sponsor.map((member) => (
+        {sponsor.slice(0,3).map((member) => (
+          <SponsorCard
+            key={member.slug}
+            name={member.entry.name}
+            image={member.entry.image || ""}
+            size="large"
+            
+          />
+        ))}
+      </div>
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center mb-4">
+        {sponsor.slice(3).map((member) => (
           <SponsorCard
             key={member.slug}
             name={member.entry.name}
