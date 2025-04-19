@@ -14,7 +14,7 @@ const localMode: LocalConfig["storage"] = {
 const githubMode: GitHubConfig["storage"] = {
   kind: "github",
   repo: {
-    owner: "RamiMikha",
+    owner: "computing-alliance-mru",
     name: "camruwebsite",
   },
 };
