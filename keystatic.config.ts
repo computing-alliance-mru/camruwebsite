@@ -9,7 +9,7 @@ import {
 
 const localMode: LocalConfig["storage"] = {
   kind: "local",
-};
+}; 
 
 const githubMode: GitHubConfig["storage"] = {
   kind: "github",
